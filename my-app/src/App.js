@@ -1,22 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
-let name="Ankit";
 function App() {
   return (
     <>
-    <h1>Hello {name}</h1>
-   <div className="abc">Love</div>
-   <div className="container"></div>
-   <nav>
-    <li>Home</li>
-    <li>Contact</li>
-    <li>Explore</li>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laboriosam veniam consectetur id voluptas numquam consequatur quibusdam, earum totam perferendis omnis unde officiis temporibus hic in corporis eaque quod voluptatem!
-    Commodi consequatur quidem, beatae porro omnis labore velit, reiciendis ut dicta doloremque odio impedit voluptatem quas necessitatibus ullam voluptatum deserunt modi nisi ipsa ad reprehenderit tempore. Quidem vel inventore asperiores!
-    Ullam ex officia ea illum voluptatibus maxime in commodi, facere doloribus sint nemo harum, odit ipsum obcaecati. Aliquid voluptas iure suscipit quod quibusdam et porro neque iste! Laboriosam, illum quae!
-    Aperiam vero tempore, voluptatibus architecto, iste laboriosam sint illo earum similique doloribus aliquam, quaerat voluptate iure sapiente. Alias sint, ullam eligendi similique voluptatibus iusto aspernatur enim excepturi rem accusantium distinctio.
-    Accusamus eligendi error in, quia neque recusandae culpa quasi consequatur eum commodi assumenda officia tempore molestiae soluta fugiat cumque totam illum? Et, saepe odit debitis laborum dignissimos esse praesentium possimus.
-   </nav>
+   {/* ------------------Nav Bar----------------------
+    */}
+    <nav className="navbar navbar-expand-lg bg-body-terticlass=ary">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="/">Texttils</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/">About</a>
+        </li>
+      </ul>
+      <form className="d-flex" role="search">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button className="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
    </>
   );
 }
